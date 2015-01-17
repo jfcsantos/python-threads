@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="5;url=/onu/log">
+</head>
+
+<body>
+
+<form name="onu" action="/onu/stopONU">
+   <input type="submit" value="STOP">
+</form>
+    
+{% if log %}
+    {% autoescape false %}
+        {{ log }}
+    {% endautoescape %}
+{% else %}
+ Starting Overnight Updates...
+{% endif %}
+
+</body>
+
+</html>
